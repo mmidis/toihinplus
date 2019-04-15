@@ -1,0 +1,152 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background-color: #84b7c6;
+    top: 0;
+}
+
+.navbar a:hover {
+    background-color: #b3e1ef;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a {
+    float: right;
+    justify-content: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #84b7c6;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #74a4b2;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #335472;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.hinta {
+    margin-top: 2px;
+    margin-bottom: 20px
+}
+
+.nappi {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: #84b7c6;
+    color: white;
+}
+
+.nappi:hover:not(.active) {
+    background-color: #b3e1ef;
+    color: black;
+    text-decoration: none;
+}
+
+.kayntikortti {
+    width: 350px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #b1b1b1;
+}
+
+.cv {
+    width: 200px;
+}
+
+.footer {
+    background-color: #84b7c6;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.linkki {
+    color: black;
+    text-decoration: none;
+    padding: 10px
+}
+
+.linkki:hover:not(.active) {
+    background-color: #b3e1ef;
+    color: black;
+    text-decoration: none;
+    padding: 10px
+}
+
+.form {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px
+}
+
+@media only screen and (max-width: 899px) {
+/*
+    body {
+        text-align: center;
+    }
+*/
+    
+    .navbar {
+        display: none
+    }
+    .navbar-mobile {
+        width: 100%;
+        background-color: #84b7c6;
+        overflow: hidden;
+    }
+    .navbar_mobile a:hover {
+        background-color: #b3e1ef;
+        color: black;
+        text-decoration: none;
+    }
+    .navbar_mobile a {
+        justify-content: center;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 22px;
+        background-color: #84b7c6;
+    }
+    h2 {
+        margin-top: 20px !important;
+    }
+    .footer {
+        padding: 20px;
+    }
+    #gallery {
+        display: none
+    }
+    #gallery-mobile {
+        display: block!important;
+        
+    }
+    .thumbnail {
+        width: 350px;
+        border-style: solid;
+        border-width: thin;
+        border-color: #b1b1b1;
+    }
+}
