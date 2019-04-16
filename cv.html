@@ -22,54 +22,62 @@
     <link rel="icon" type="image/jpg" href="img/icon.jpg" />
     <link href="css/tyyli.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
-    <header>
-        <div class="navbar">
-            <a href="index.html" style="color: white; float: left; margin-left: 30px; font-size: 150%; font-family: 'Roboto', sans-serif; letter-spacing: 5px; padding-left: 22px">TÖIHIN+</a>
-            <a href="tilaus.html" style="margin-right: 50px">Tilauslomake</a>
+      <header>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html" style="color: white; float: left; font-size: 150%; font-family: 'Roboto', sans-serif; letter-spacing: 5px; padding-left: 22px">TÖIHIN+</a>
+            <a href="index.html">Etusivu</a>
             <a href="cv.html">CV-kuvaus</a>
             <a href="kayntikortti.html">Käyntikortit</a>
-            <a href="index.html">Etusivu</a>
-        </div>
-
-        <div class="navbar_mobile">
-            <a href="index.html" style="color: white; font-size: 150%; font-family: 'Roboto', sans-serif; letter-spacing: 5px">TÖIHIN+</a>
-            <a href="index.html">Etusivu</a>
-            <a href="kayntikortti.html">Käyntikortit</a>
-            <a href="cv.html">CV-kuvaus</a>
             <a href="tilaus.html">Tilauslomake</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style="margin-right: 10px"></i></a>
         </div>
     </header>
 
-    <img src="img/cv_mainos_iso.jpg" style="width: 100%">
-    <h2>CV-kuvaus</h2>
-    <h3>Erotu kuvallisella käyntikortilla! </h3>
-    <p>Nykyajan rekrytoijat yhä useammin jättävät kuvattomat ansioluettelot hakijapinon loppupäähän, sillä kuvan avulla halutaan nähdä hakijan yleisolemus, jonka lisäksi se nostaa erottuvuutta. Mikäli olet ahkera verkostoituja tai edustat vahvasti henkilöbrändilläsi, suosittelemme painattamaan myös käyntikorttiisi yhteystietojen lomaan oman kuvasi. <br>Palveluvalikoimastamme löydät pääkaupunkiseudulla toteutettavat ammattimaiset CV-kuvaukset, jonne löydät avoimet kuvausajat tai voimme sopia oman kuvausajan aikataulujesi mukaan. Kuva voidaan halutessasi liittää suoraan tilaamaasi käyntikorttipohjaan, jonka lisäksi toimitamme digikuvan käyttöösi nopeasti kuvausta seuraavana päivänä. Tilaa CV-kuvaus itsellesi hintaan 19,95€ tai yhdistä se suoraan tilaamaasi käyntikorttipohjaan pakettihintaan 34,95€ <br><br>Kuvaus sisältää kuvauksen, kuvakäsittelyn sekä digikuvan toimittamisen sähköpostiisi kuvausta seuraavana päivänä. </p><br><a href="tilaus.html" style="color:black">Siirry varaamaan oma kuvauksesi tästä </a>
-    <p>Seuraavat avoimet kuvausajat Haaga-Helian ammattikorkeakoulun Pasilan kampuksella osoitteessa Ratapihantie 13, 00520 Helsinki </p>
-    <h3>Ma 15.4.2019 klo 12:30 <br>To 18.4.2019 klo 12:30 <br>To 25.4.2019 13:00 </h3>
-    <p>Tai varaa oma aikasi suoraan kuvaajiltamme: <br>Iita F. / iita.fourastie@myy.haaga-helia.fi <br>Suvi H. / suvi.hautaluoma@myy.haaga-helia.fi <br></p>
+    <div style="padding-left: 20px; padding-right: 10px; margin-top: 70px">
+        <h2>CV-kuvaus 20 € </h2>
+        <p>Päivitä CV-kuvasi ammattitaitoisilla kuvaajillamme! <br>Toteutamme kuvauksia pääkaupunkiseudulla, jonne löydät avoimet kuvausajat tai voimme sopia oman kuvausaikasi aikataulujesi mukaan. Kuva voidaan halutessasi liittää suoraan tilaamaasi käyntikorttiin, jonka lisäksi toimitamme digikuvan käyttöösi nopeasti jo kuvausta seuraavana päivänä.</p>
 
-    <img class="cv" src="img/cv1.png" alt="">
-    <img class="cv" src="img/cv2.png" alt="">
+        <h3>Seuraavat avoimet ajat CV-kuvaukseen</h3>
+        <p>To 18.4.2019 klo 12:30 <br>To 25.4.2019 13:00 <br> To 2.5.2019 klo 12:00</p>
+
+        <button class="nappi" style="border-radius: 10px; width: 200px"><a href="tilaus.html">Siirry tilaamaan</a></button>
+        
+        <p>Kuvauspisteemme löydät Haaga-Helian ammattikorkeakoulun Pasilan kampukselta osoitteesta Ratapihantie 13, 00520 Helsinki<br> Voit varata oman aikasi myös suoraan kuvaajiltamme: <br>Iita F / iita.fourastie@myy.haaga-helia.fi <br>Suvi H. / suvi.hautaluoma@myy.haaga-helia.fi </p>
+
+    </div>
 
 
 
     <!--tästä alaspäin tilauslomakkeeseen-->
     <footer class="footer">
+        <h3>Keitä me olemme?</h3>
+        <p>Hei ja tervetuloa sivuillemme! <br>Me haluamme auttaa juuri sinua erottumaan työnhaussa ja ratkaisuna tarjoamme tehokkaan verkostoitumisen välinettä eli käyntikorttia sekä ammattimaista CV-kuvaa. Olemme suunnitelleet visuaaliset ja trendikkäät käyntikorttipohjat valmiina painatettaviksi, jotta sinulle jää enemmän aikaa työnhakuun – tilaa omasi jo tänään! <br>Tsemppiä työnhakuun toivottaen, <br>Iita, Midora ja Suvi </p>
         <a href="toimitusehdot.html" class="linkki">Toimitusehdot</a>
         <a href="tietosuojaseloste.html" class="linkki">Tietosuojaseloste</a>
-        <p>© 2019 Team SIM - Haaga-Helia Ammattikorkeakoulu</p>
+        <p>© 2019 Team SIM</p>
 
     </footer>
 
     <!-- scriptit -->
     <!-- Jquery pääkirjasto -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
 
+    </script>
 
 </body>
 

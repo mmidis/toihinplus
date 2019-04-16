@@ -17,7 +17,7 @@ body {
 }
 
 .navbar a {
-    float: right;
+    float: left;
     justify-content: center;
     display: block;
     color: white;
@@ -26,6 +26,10 @@ body {
     text-decoration: none;
     font-size: 22px;
     background-color: #84b7c6;
+}
+
+.navbar .icon {
+  display: none;
 }
 
 h1 {
@@ -63,6 +67,13 @@ h2 {
     text-decoration: none;
 }
 
+.nappi a {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
 .kayntikortti {
     width: 350px;
     border-style: solid;
@@ -76,7 +87,7 @@ h2 {
 
 .footer {
     background-color: #84b7c6;
-    padding: 50px;
+    padding: 30px;
     margin-top: 50px;
 }
 
@@ -100,36 +111,33 @@ h2 {
     margin-bottom: 15px
 }
 
-@media only screen and (max-width: 899px) {
-/*
-    body {
-        text-align: center;
+.mainoskuva {
+    width: 500px
+}
+
+@media only screen and (max-width: 899px) {    
+    .navbar a:not(:first-child) {
+        display: none;
     }
-*/
-    
-    .navbar {
-        display: none
-    }
-    .navbar-mobile {
-        width: 100%;
-        background-color: #84b7c6;
-        overflow: hidden;
-    }
-    .navbar_mobile a:hover {
-        background-color: #b3e1ef;
-        color: black;
-        text-decoration: none;
-    }
-    .navbar_mobile a {
-        justify-content: center;
+    .navbar a.icon {
+        float: right;
         display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 22px;
-        background-color: #84b7c6;
     }
+    
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
     h2 {
         margin-top: 20px !important;
     }
@@ -141,12 +149,15 @@ h2 {
     }
     #gallery-mobile {
         display: block!important;
-        
     }
     .thumbnail {
         width: 350px;
         border-style: solid;
         border-width: thin;
         border-color: #b1b1b1;
+    }
+    
+    .mainoskuva {
+        width: 100%;
     }
 }
