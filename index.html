@@ -21,7 +21,8 @@
     <title>Töihin+</title>
     <link rel="icon" type="image/jpg" href="img/icon.jpg" />
     <link href="css/tyyli.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -41,17 +42,25 @@
 
     <!--tähän asti tilauslomakkeeseen-->
 
-    <img src="img/cv_kuva_uusi.jpg" style="width: 100%; margin-top: 40px">
+    <img src="img/cv_kuva_uusi.jpg" alt="" style="width: 100%; margin-top: 40px">
     <div style="padding-left: 20px; padding-right: 10px">
         <h2>PÄIVITÄ CV-KUVASI JA VALITSE OMA KÄYNTIKORTTISI PAKETTIHINTAAN 35 € </h2>
         <p>Paketti sisältää CV-kuvauksen joko avoimina kuvausaikoina tai erikseen sovittuna ajankohtana sovitussa sijainnissa Helsingissä, sekä painovalmiin käyntikorttiaineiston omilla teksteillä valmiisiin malleihin pohjautuen. HUOM! Hinta ei sisällä käyntikorttien painatusta!</p>
-        <button class="nappi" style="border-radius: 10px; width: 200px"><a href="tilaus.html">Siirry tilaamaan</a></button>
+        <!--        <button class="nappi" style="border-radius: 10px; width: 200px"><a href="tilaus.html">Siirry tilaamaan</a></button>-->
+
+        <form>
+            <input type="button" class="nappi" style="border-radius: 10px; width: 200px" value="Siirry tilaamaan" onclick="window.location.href='tilaus.html'" />
+        </form>
 
         <h2>TULE UUSIMAAN CV-KUVASI HINTAAN 20 € </h2>
         <img class="cv" src="img/cv1.png" alt="">
         <img class="cv" src="img/cv2.png" alt=""><br>
         <p>Hinta sisältää CV-kuvauksen joko avoimina kuvausaikoina tai erikseen sovittuna ajankohtana sovitussa sijainnissa Helsingissä.</p>
-        <button class="nappi" style="border-radius: 10px; width: 200px"><a href="cv.html">Avoimet kuvausajat</a></button>
+        <!--        <button class="nappi" style="border-radius: 10px; width: 200px"><a href="cv.html">Avoimet kuvausajat</a></button>-->
+
+        <form>
+            <input type="button" class="nappi" style="border-radius: 10px; width: 200px" value="Avoimet kuvausajat" onclick="window.location.href='cv.html'" />
+        </form>
 
         <h2>KÄYNTIKORTTIPOHJA OMALLA TEKSTILLÄ 25 € </h2>
 
@@ -60,7 +69,11 @@
             <img class="kayntikortti" src="img/card7.jpg" alt="7">
         </div>
         <p>Hinta sisältää painovalmiin käyntikorttiaineiston omilla teksteillä valmiisiin malleihin pohjautuen. HUOM! Hinta ei sisällä käyntikorttien painatusta!</p>
-        <button class="nappi" style="border-radius: 10px; width: 200px"><a href="kayntikortti.html">Valitse omasi</a></button>
+<!--        <button class="nappi" style="border-radius: 10px; width: 200px"><a href="kayntikortti.html">Valitse omasi</a></button>-->
+
+        <form>
+            <input type="button" class="nappi" style="border-radius: 10px; width: 200px" value="Valitse omasi" onclick="window.location.href='kayntikortti.html'" />
+        </form>
 
 
 
